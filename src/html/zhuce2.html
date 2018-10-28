@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>男士购 - 用户注册</title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="keywords" content="男士购">
+<meta name="description" content="男士购">
+<style type="text/css">
+body { _behavior: url(https://www.nanshig.com/shop/templates/default/css/csshover.htc);
+}
+</style>
+<script type="text/javascript" src="./../js/jquery-3.2.1.js"></script>
+<link href="./../css/base.css" rel="stylesheet" type="text/css">
+<link href="./../css/home_header.css" rel="stylesheet" type="text/css">
+<link href="./../css/member_login.css" rel="stylesheet" type="text/css">
+<link href="./../css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="header-wrap">
+  <header class="public-head-layout nsgwrapper">
+    <h1 class="site-logo"><a href="https://www.nanshig.com/"><img src="./../images/05923582196171529.png" class="pngFix"></a></h1>
+            
+<div class="login-msg error">
+        <p class="error" style="float: none;width: auto;">
+            为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+        </p>
+    </div>
+    
+    
+<div class="nsgzhuce">
+<a href="#">登录</a>
+</div>
+    
+    <!--div class="nc-login-now">我已经注册，现在就<a href="index.php?act=login&op=index&ref_url=https%3A%2F%2Fwww.nanshig.com%2Fshop%2Fcate-151-0-0-0-0-0-0-0-0.html" title="" class="register">登录</a></span></div-->
+          </header>
+</div>
+<!-- PublicHeadLayout End -->
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="nc-register-bg">
+  <div class="nc-register-box">
+    <div class="nc-register-layout">
+      <div class="left">
+        <div class="nc-register-mode">
+          <ul class="tabs-nav">
+            <!--<li style="width:0px"><a href="#"><i></i></a></li>-->
+                        <li style="width:100%"><a href="https://www.nanshig.com/shop/index.php?act=login&amp;op=register&amp;ref_url=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DdjBq6KcNJvVr8MAENYIGfuKGc8sNU3h0xg2etAYgNMjs4gmy5KLXEysqNRF6TiiGxoJt2t-wHiFVb5T5yau_9512Q4oT_Y7WS93U5odYzNq%26wd%3D%26eqid%3Da49dce5a00043291000000065bcfcba6#" class="tabulous_active">使用手机号码注册<i></i></a></li><span class="tabulousclear"></span>
+                      </ul>
+          <div id="tabs_container" class="tabs-container transition" style="height: 290px;">
+            <!--<div id="default" class="tabs-content">
+              <form id="register_form" class="nc-login-form"  method="post" action="https://www.nanshig.com/shop/index.php?act=login&op=usersave">
+                <input type='hidden' name='formhash' value='v28X2r4IhowMlrUcm72HjI4Xwbzidd5' />                <dl>
+                  <dt>用户名：</dt>
+                  <dd>
+                    <input type="text" id="user_name" name="user_name" class="text" tipMsg="请使用3-15个中、英文、数字及“-”符号"/>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>设置密码：</dt>
+                  <dd>
+                    <input type="password" id="password" name="password" class="text" tipMsg="6-20个大小写英文字母、符号或数字"/>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>确认密码：</dt>
+                  <dd>
+                    <input type="password" id="password_confirm" name="password_confirm" class="text" tipMsg="请再次输入密码"/>
+                  </dd>
+                </dl>
+                <dl class="mt15">
+                  <dt>邮箱：</dt>
+                  <dd>
+                    <input type="text" id="email" name="email" class="text" tipMsg="输入常用邮箱作为验证及找回密码使用"/>
+                  </dd>
+                </dl>
+                                <div class="code-div mt15">
+                  <dl>
+                    <dt>验证码：</dt>
+                    <dd>
+                      <input type="text" id="captcha" name="captcha" class="text w80" size="10" tipMsg="输入验证码" />
+                    </dd>
+                  </dl>
+                  <span><img src="index.php?act=seccode&op=makecode&type=50,120&nchash=d8fa502d" name="codeimage" id="codeimage"/> <a class="makecode" href="javascript:void(0)" onclick="javascript:document.getElementById('codeimage').src='index.php?act=seccode&op=makecode&type=50,120&nchash=d8fa502d&t=' + Math.random();">看不清，换一张</a></span></div>
+                                <dl class="clause-div">
+                  <dd>
+                    <input name="agree" type="checkbox" class="checkbox" id="clause" value="1" checked="checked" />
+                    阅读并同意<a href="https://www.nanshig.com/shop/document-agreement.html" target="_blank" class="agreement" title="阅读并同意">《服务协议》</a></dd>
+                </dl>
+                <div class="submit-div">
+                  <input type="submit" id="Submit" value="立即注册" class="submit"/>
+                </div>
+                <input type="hidden" value="https://www.baidu.com/link?url=djBq6KcNJvVr8MAENYIGfuKGc8sNU3h0xg2etAYgNMjs4gmy5KLXEysqNRF6TiiGxoJt2t-wHiFVb5T5yau_9512Q4oT_Y7WS93U5odYzNq&wd=&eqid=a49dce5a00043291000000065bcfcba6" name="ref_url">
+                <input name="nchash" type="hidden" value="d8fa502d" />
+                <input type="hidden" name="form_submit" value="ok" />
+              </form>
+            </div>-->
+                        <div id="mobile" class="tabs-content" style="position: absolute; top: 0px;">
+              <form id="post_form" method="post" class="nc-login-form" style="display: none;">
+                <input type="hidden" name="formhash" value="-Ycm_yG-mT3g2Q5E0UFW5Q80SmS7Cjr">                <input type="hidden" name="form_submit" value="ok">
+                <input name="nchash" type="hidden" value="d8fa502d">
+                <dl class="">
+                  <dt>手机号：</dt>
+                  <dd>
+                    <input type="text" class="text valid" tipmsg="请输入手机号码" autocomplete="off" value="请输入手机号码" name="phone" id="phone" style="color: rgb(0, 0, 0);">
+                  </dd>
+                </dl>
+                <div class="code-div">
+                  <dl class="">
+                    <dt>验证码：</dt>
+                    <dd>
+                      <input type="text" name="captcha" class="text w100 valid" id="image_captcha" size="10" tipmsg="输入验证码" value="输入验证码" style="color: rgb(0, 0, 0);">
+                    </dd>
+                  </dl>
+                  <span><img src="./男士购 - 用户注册2_files/index.php" title="" name="codeimage" id="sms_codeimage"><a class="makecode" href="javascript:void(0);" onclick="javascript:document.getElementById(&#39;sms_codeimage&#39;).src=&#39;index.php?act=seccode&amp;op=makecode&amp;type=50,120&amp;nchash=d8fa502d&amp;t=&#39; + Math.random();">看不清，换一张</a></span> </div>
+                <div class="tiptext" id="sms_text">短信验证码已发出</div>
+                <dl class="">
+                  <dt>短信验证：</dt>
+                  <dd>
+                    <input type="text" name="sms_captcha" autocomplete="off" tipmsg="输入6位短信验证码" class="text valid" id="sms_captcha" size="15" value="输入6位短信验证码" style="color: rgb(0, 0, 0);">
+                  </dd>
+                </dl>
+                <div class="submit-div">
+                  <input type="button" id="submitBtn" class="submit" value="下一步">
+                </div>
+              </form>
+	      <form style="" id="register_sms_form" class="nc-login-form" method="post" action="https://www.nanshig.com/shop/index.php?act=connect_sms&amp;op=register">
+                <input type="hidden" name="form_submit" value="ok">
+                <input type="hidden" name="register_captcha" id="register_sms_captcha" value="651594">
+                <input type="hidden" name="register_phone" id="register_phone" value="13413684901">
+                <dl>
+                  <dt>用户名：</dt>
+                  <dd>
+                    <input type="text" id="member_name" name="member_name" class="text w150" value="">
+                  </dd>
+                  <span class="note">系统生成随机用户名，可选择默认或自行修改一次。</span>
+                </dl>
+                <dl>
+                  <dt>设置密码：</dt>
+                  <dd>
+                    <input type="text" id="sms_password" name="password" class="text w150" value="">
+                  </dd>
+                  <span class="note">系统生成随机密码，请牢记或修改为自设密码。</span>
+                </dl>
+                <dl class="mt15">
+                  <dt>邮箱：</dt>
+                  <dd>
+                    <input type="text" id="sms_email" name="email" class="text" placeholder="输入常用邮箱作为验证及找回密码使用" tipmsg="输入常用邮箱作为验证及找回密码使用" style="color: rgb(187, 187, 187);">
+                  </dd>
+                </dl>
+                <dl class="clause-div">
+                  <dd>
+                    <input name="agree" type="checkbox" class="checkbox" id="sms_clause" value="1" checked="checked">
+                    阅读并同意<a href="https://www.nanshig.com/shop/document-agreement.html" target="_blank" class="agreement" title="阅读并同意">《服务协议》</a></dd>
+                </dl>
+                <div class="submit-div">
+                  <input type="submit" value="提交注册" class="submit" title="提交注册">
+                </div>
+              </form>
+            </div>
+                      </div>
+        </div>
+      </div>
+      <div class="right">
+                <div class="api-login">
+          <h4>使用第三方快捷账号登录</h4>
+                    <a href="https://www.nanshig.com/shop/api.php?act=toqq" title="QQ账号登录" class="qq"><i></i></a>
+                              <a href="https://www.nanshig.com/shop/api.php?act=tosina" title="新浪微博" class="sina"><i></i></a>
+                              <!--a href="javascript:void(0);" onclick="ajax_form('weixin_form', '微信账号登录', 'https://www.nanshig.com/shop/index.php?act=connect_wx&op=index', 360);" title="微信账号登录" class="wx"><i></i></a-->
+                  </div>
+                <div class="reister-after">
+          <h4>注册之后您可以</h4>
+          <ol>
+            <li class="ico01"><i></i>购买商品支付订单</li>
+            <li class="ico02"><i></i>收藏商品关注店铺</li>
+            <li class="ico03"><i></i>安全交易诚信无忧</li>
+            <li class="ico04"><i></i>积分获取优惠购物</li>
+            <li class="ico05"><i></i>会员等级享受特权</li>
+            <li class="ico06"><i></i>评价晒单站外分享</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="nsgfoot-xt"></div>
+<div class="nsgfoot-bz">
+    <div class="w-1200">
+        <img src="./../images/nsgfoot_bz.png" alt="" width="1200" height="90">
+    </div>
+</div>
+
+<div class="nsgfoot-bottom">
+    <div class="bottom-box cfix">
+        <div class="bottom-box-left">
+            
+            <div class="bottom-app-code"></div>
+            <p>男士购客服</p>
+            <p>添加微信号</p>
+        </div>
+        <div class="bottom-box-center">
+            <ul class="box-center">
+                <li>
+                    <h3>新手指南</h3>
+                    <a href="https://www.nanshig.com/shop/article-18.html" target="_blank">找回密码</a>
+                    <a href="https://www.nanshig.com/shop/article-6.html" target="_blank">注册账号</a>
+                    <a href="https://www.nanshig.com/shop/article-44.html" target="_blank">交易条款</a>
+                </li>
+                <li>
+                    <h3>支付配送</h3>
+                    <a href="https://www.nanshig.com/shop/article-17.html" target="_blank">网上支付</a>
+                    <a href="https://www.nanshig.com/shop/article-42.html" target="_blank">配送运费</a>
+                    <a href="https://www.nanshig.com/shop/article-43.html" target="_blank">配送方式</a>
+                </li>
+                <li>
+                    <h3>售后服务</h3>
+                    <a href="https://www.nanshig.com/shop/article-31.html" target="_blank">售后政策</a>
+                    <a href="https://www.nanshig.com/shop/article-32.html" target="_blank">售后流程</a>
+                    <a href="https://www.nanshig.com/shop/article-34.html" target="_blank">售后申请</a>
+                </li>
+                <li>
+                    <h3>关于我们</h3>
+                    <a href="https://www.nanshig.com/shop/article-22.html" target="_blank">公司介绍</a>
+                    <a href="https://www.nanshig.com/shop/article-23.html" target="_blank">隐私声明</a>
+                    <a href="https://www.nanshig.com/shop/article-24.html" target="_blank">招贤纳士</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-box-right cfix">
+            <div class="contact-us">
+                <h3>联系我们</h3>
+                <p>客服微信：gebuzaishuai</p>              
+                <p>工作日：9:00-20:00</p>
+                <div class="gb-okhqb-yj contact-advice">
+                    <span class="okhqb_feed" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/index.php?act=member_mallconsult&amp;op=add_mallconsult&#39;">意见反馈</span>
+                </div>
+            </div>
+            <div class="attention-us cfix">
+                <h3>关注我们</h3>
+                <div class="weiXin" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/article-23.html&#39;" title="男士购微信">
+                    <div class="weiXinCode"></div>
+                </div>
+                <div class="weiBo" onclick="window.open(&#39;https://weibo.com/p/1006065678617328&#39;);" title="男士购微博">
+                    <div class="weiBoCode"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nsgfoot-rz">
+    <p class="nsgfoot-link">
+    <a>友情链接：</a>
+    
+                </p>
+    
+    <p class="nsgfoot-copy">Copyright © 2010-2018 男士购 版权所有 <a target="_blank" rel="nofollow" href="http://www.miitbeian.gov.cn/">桂ICP备15008077号-1</a>&nbsp;&nbsp;<a rel="nofollow"></a><a href="http://www.cnzz.com/stat/website.php?web_id=1273089985" target="_blank" title="站长统计">站长统计</a></p>
+    
+</div>
+<!--/footer-->
+
+<link href="./../css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+
+<link href="./../css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+
+
+			<link href="./../css/chat.css" rel="stylesheet" type="text/css">
+			<div style="clear: both;"></div>
+			<div id="web_chat_dialog" style="display: none;float:right;">
+					</div><object width="1" height="1" style="position: absolute; left: -1px;" id="msg_audio" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param value="https://www.nanshig.com/chat/resource/audio.swf" name="movie"><param value="always" name="allowscriptaccess"><embed width="1" height="1" allowscriptaccess="always" src="https://www.nanshig.com/chat/resource/audio.swf" name="msg_audio"></object>
+			<a id="chat_login" href="javascript:void(0)" style="display: none;"></a>
+			
+
+</body></html>

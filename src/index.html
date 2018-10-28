@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>男士购 - </title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="keywords" content="男士购">
+<meta name="description" content="男士购">
+<style type="text/css">
+body {
+
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- <script type="text/javascript" src="js/goodList-1.0.js"></script> -->
+<script type="text/javascript" src="js/indexGoodlist.js"></script>
+<script type="text/javascript" src="js/shopListCook.js"></script>
+<script type="text/javascript" src="js/sideShopCarClose.js"></script>
+
+
+
+<link rel="shortcut icon" href="https://www.nanshig.com/favicon.ico">
+<link href="./css/base.css" rel="stylesheet" type="text/css">
+<link href="./css/home_header.css" rel="stylesheet" type="text/css">
+<link href="./css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- PublicTopLayout Begin -->
+ 
+    <div id="append_parent"></div>
+    <div id="ajaxwaitid"></div>
+    <div id="vToolbar" class="nc-appbar">
+    <div class="nc-appbar-tabs" id="appBarTabs">
+        <div class="user ta_delay" nctype="a-barLoginBox">
+      <div class="avatar"><img src="./images
+      /default_user_portrait.gif"></div>
+      <p>未登录</p>
+    </div>
+    <div class="user-login-box" nctype="barLoginBox" style="display:none;"> <i class="arrow"></i> <a href="javascript:void(0);" class="close-a" nctype="close-barLoginBox" title="关闭">X</a>
+      <form id="login_form" method="post" action="https://www.nanshig.com/shop/index.php?act=login&amp;op=login" onsubmit="ajaxpost(&#39;login_form&#39;, &#39;&#39;, &#39;&#39;, &#39;onerror&#39;)">
+        <input type="hidden" name="formhash" value="DVIf-BJKtWJOkAb_4CaG3Q.ZqvBuK9q">        <input type="hidden" name="form_submit" value="ok">
+        <input name="nchash" type="hidden" value="6952ade4">
+        <dl>
+          <dt><strong>登录名</strong></dt>
+          <dd>
+            <input type="text" class="text" tabindex="1" autocomplete="off" name="user_name" autofocus="">
+            <label></label>
+          </dd>
+        </dl>
+        <dl>
+          <dt><strong>登录密码</strong><a href="https://www.nanshig.com/shop/index.php?act=login&amp;op=forget_password" target="_blank">忘记登录密码？</a></dt>
+          <dd>
+            <input tabindex="2" type="password" class="text" name="password" autocomplete="off">
+            <label></label>
+          </dd>
+        </dl>
+                <dl>
+          <dt><strong>验证码</strong><a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById(&#39;codeimage&#39;).src=&#39;https://www.nanshig.com/shop/index.php?act=seccode&amp;op=makecode&amp;nchash=6952ade4&amp;t=&#39; + Math.random();">更换验证码</a></dt>
+          <dd>
+            <input tabindex="3" type="text" name="captcha" autocomplete="off" class="text w130" id="captcha2" maxlength="4" size="10">
+            <img src="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-0.html" name="codeimage" border="0" id="codeimage" class="vt">
+            <label></label>
+          </dd>
+        </dl>
+                <div class="bottom">
+          <input type="submit" class="submit" value="确认">
+          <input type="hidden" value="" name="ref_url">
+          <a href="https://www.nanshig.com/shop/index.php?act=login&amp;op=register&amp;ref_url=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DLgvVculHflSPCSarZX8x3mgjAlwXv8D2SV0kpThBoilYam4iyuiL2FEyRjBO526xsvTDK2iErptYhtUjXVZQXoBivj0Iyet16lwlBUGKPRG%26wd%3D%26eqid%3Dddabdd1000015bcf000000065bcd6829" target="_blank">注册新用户</a>
+                              <!--a class="mr20" title="微信账号登录" onclick="ajax_form('weixin_form', '微信账号登录', 'https://www.nanshig.com/shop/index.php?act=connect_wx&op=index', 360);" href="javascript:void(0);">微信</a-->
+                              <a class="mr20" title="新浪微博账号登录" href="https://www.nanshig.com/shop/api.php?act=tosina">新浪微博</a>				  <a class="mr20" title="QQ账号登录" href="https://www.nanshig.com/shop/api.php?act=toqq">QQ账号</a>		            </div>
+      </form>
+    </div>
+    <ul class="tools">
+        <li><a href="javascript:void(0);" id="rtoolbar_cart" class="cart ta_delay"><div class="tools_img"></div><span>购物车</span><i id="rtoobar_cart_count" class="new_msg" style="display:none;"></i></a></li>
+        <li><a href="javascript:void(0);" id="compare" class="compare ta_delay"><div class="tools_img"></div><span>对比</span></a></li>
+        <li><a href="javascript:void(0);" id="gotop" class="gotop ta_delay"><div class="tools_img"></div><span>顶部</span></a></li>
+    </ul>
+    <div class="content-box" id="content-compare">
+      <div class="top">
+        <h3>商品对比</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="comparelist"></div>
+    </div>
+    <div class="content-box" id="content-cart">
+      <div class="top">
+        <h3>我的购物车</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="rtoolbar_cartlist">
+        <ul class="cart-list">
+          <li><dl><dd style="text-align: center; ">暂无商品</dd></dl></li>
+        </ul>
+          <div class="btn-box">
+          <div nctype="rtoolbar_total_price" class="total-price"></div>
+          <a href="html/total.html" onclick="">结算购物车中的商品</a>
+          </div>
+      </div>
+    </div>
+    <a id="activator" href="javascript:void(0);" class="nc-appbar-hide"></a> </div>
+    <div class="nc-hidebar" id="ncHideBar">
+        <div class="nc-hidebar-bg">
+            <div class="user-avatar"><img src="./images/default_user_portrait.gif"></div>
+            <div class="frame"></div>
+            <div class="show"></div>
+        </div>
+    </div>
+</div>
+<!--网站公告-->
+<style>
+    .public-top-layout.w {
+        border-bottom: solid 2px #F5F5F5;
+        box-shadow: 1px 1px 10px 1px rgba(15,166,255,.1);
+    }
+    .nsg-top-notice {
+        font-size: 16px;
+        color: #ba9c6d;
+        background-color: #fffbea;
+        padding: 14px 24px;
+    }
+    .nsg-layout {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .nsg-top-notice .nsg-ico-info {
+        width: 22px;
+        height: 23px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 12px;
+        background-image: url(https://www.nanshig.com/images/nsg-ico-info.png);
+        background-repeat: no-repeat;
+    } 
+</style>
+<div class="nsg-top-notice">
+  <div class="nsg-layout">
+    <i class="nsg-ico-info"></i>男士购域名nanshig.com全新升级NRO.CN，两域名同时使用，感谢您一路陪伴，未来还要携手同行。APP<a style="color:#1cbcb4;margin-left:10px;" href="https://www.nanshig.com/app/nsg.apk">直接下载新版 &gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#1cbcb4;margin-left:10px;" href="http://sj.qq.com/myapp/detail.htm?apkName=top.yokey.nsg" target="_blank">应用市场下载 &gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#1cbcb4;margin-left:10px;" href="https://www.nanshig.com/shengji/index.html" target="_blank">升级更新教程</a>
+  </div>
+</div>
+<!--div class="nsg-tis">
+    <div class="nsg-tistit">
+    <a href="https://www.nanshig.com/wap/tmpl/nszl_detail.html?id=82" target="_blank" >感谢您对男士购的喜爱和支持。为了给用户提供更加丰富的商品购物选择，自2018年3月11日起，男士购将全面升级网站、VI以及APP体验。立即查看详情>></a> </div>
+</div-->
+<!--/网站公告-->
+<div class="public-top-layout w">
+  <div class="topbar wrapper">
+    <div class="user-entry">
+            您好，
+	  <a href="https://www.nanshig.com/shop/index.php?act=login&amp;op=index&amp;ref_url=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DLgvVculHflSPCSarZX8x3mgjAlwXv8D2SV0kpThBoilYam4iyuiL2FEyRjBO526xsvTDK2iErptYhtUjXVZQXoBivj0Iyet16lwlBUGKPRG%26wd%3D%26eqid%3Dddabdd1000015bcf000000065bcd6829">马上登陆</a> <span><a href="./html/zhuce.html">免费注册</a></span>
+	  	<span class="other">
+            <a href="https://www.nanshig.com/shop/api.php?act=toqq" title="QQ账号登录" class="qq"><i></i></a>
+                  <a href="https://www.nanshig.com/shop/api.php?act=tosina" title="新浪微博" class="sina"><i></i></a>
+                     <!--a href="javascript:void(0);" onclick="ajax_form('weixin_form', '微信账号登录', 'https://www.nanshig.com/shop/index.php?act=connect_wx&op=index', 360);" title="微信账号登录" class="wx"><i></i></a-->      </span>
+                </div>
+    <div class="quick-menu">
+
+
+	
+      <dl>
+        <dt><em class="ico_order"></em><a href="https://www.nanshig.com/shop/index.php?act=member_order">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_new">待付款订单</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_send">待确认收货</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_noeval">待评价交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><em class="ico_store"></em><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fglist">我的收藏</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fglist">商品收藏</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fslist">店铺收藏</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><em class="ico_service"></em><a href="https://www.nanshig.com/shop/article_cate-2.html">帮助中心</a></dt>
+      </dl>
+      	  
+    </div>
+  </div>
+</div>
+<!-- PublicHeadLayout Begin -->
+<!-- 顶部广告展开效果-->
+<div class="wrapper" id="top-banner">
+<a href="javascript:void(0);" title="关闭"></a>
+</div>
+
+<!-- 顶部广告展开效果-->
+<div class="header-wrap">
+  <header class="public-head-layout wrapper">
+    <h1 class="site-logo"><a href="#"><img src="./images/05923582196171529.png" class="pngFix"></a></h1>
+    <div class="site-ad">
+            </div>
+    <div class="head-search-bar">
+        <div id="search">
+          <ul class="tab">
+            <li act="search" class="current"><span>商品</span><i class="arrow"></i></li>
+            <li act="store_list"><span>店铺</span></li>
+          </ul>
+        </div>
+      <form class="search-form" method="get" action="https://www.nanshig.com/shop">
+        <input type="hidden" value="search" id="search_act" name="act">
+         <input placeholder="搜“型男”试试，新品上线，快来拔草" name="keyword" id="keyword" type="text" class="input-text" value="" maxlength="60" x-webkit-speech="" lang="zh-CN" onwebkitspeechchange="foo()" x-webkit-grammar="builtin:search">
+        <input type="submit" id="button" value="搜索" class="input-submit">
+      </form>
+      <!--搜索关键字-->
+      <div class="keyword">热门搜索：        <ul>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E5%A4%96%E5%A5%97">外套</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E4%B8%83%E5%88%86%E8%A3%A4">七分裤</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=t%E6%81%A4">t恤</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E8%A1%AC%E8%A1%AB">衬衫</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E9%A6%99%E6%B0%B4">香水</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E5%B8%86%E5%B8%83%E9%9E%8B">帆布鞋</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E8%BF%90%E5%8A%A8%E4%BC%91%E9%97%B2">运动休闲</a></li>
+                    <li><a href="https://www.nanshig.com/shop/index.php?act=search&amp;op=index&amp;keyword=%E8%BF%90%E5%8A%A8%E9%9E%8B">运动鞋</a></li>
+                  </ul>
+      </div>
+    </div>
+    <div class="head-user-menu">
+      <dl class="my-mall">
+        <dt><span class="ico"></span>会员中心<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4>                        
+            </h4>
+            <a href="https://www.nanshig.com/shop/index.php?act=member&amp;op=home" class="arrow">进入会员中心<i></i></a></div>
+          <div class="user-centent-menu">
+            <ul>
+              <li><a href="https://www.nanshig.com/shop/index.php?act=member_message&amp;op=message">站内消息(<span>0</span>)</a></li>
+              <li><a href="https://www.nanshig.com/shop/index.php?act=member_order" class="arrow">我的订单<i></i></a></li>
+              <li><a href="https://www.nanshig.com/shop/index.php?act=member_consult&amp;op=my_consult">咨询回复(<span id="member_consult">0</span>)</a></li>
+              <li><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fglist" class="arrow">我的收藏<i></i></a></li>
+                            <li><a href="https://www.nanshig.com/shop/index.php?act=member_voucher">代金券(<span id="member_voucher">0</span>)</a></li>
+                                          <li><a href="https://www.nanshig.com/shop/index.php?act=member_points" class="arrow">我的积分<i></i></a></li>
+                          </ul>
+          </div>
+          <div class="browse-history">
+            <div class="part-title">
+              <h4>最近浏览的商品</h4>
+              <span style="float:right;"><a href="https://www.nanshig.com/shop/index.php?act=member_goodsbrowse&amp;op=list">全部浏览历史</a></span>
+            </div>
+            <ul>
+              <li class="no-goods"><img class="loading" src="./images/loading.gif"></li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+      <dl class="my-cart">
+                <dt><span class="ico"></span>我的购物车<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4>最新加入的商品</h4>
+          </div>
+          <div class="incart-goods-box">
+            <div class="incart-goods"> <img class="loading" src="./images/loading.gif"> </div>
+          </div>
+          <div class="checkout"> <span class="total-price">共<i>0</i>种商品</span><a href="https://www.nanshig.com/shop/index.php?act=cart" class="btn-cart">结算购物车中的商品</a> </div>
+        </dd>
+      </dl>
+    </div>
+  </header>
+</div>
+<!-- PublicHeadLayout End -->
+<!-- publicNavLayout Begin -->
+<nav class="public-nav-layout">
+  <div class="wrapper">
+    <div class="all-category">
+        <div class="title"> <i></i>
+
+  <h3><a href="https://www.nanshig.com/shop/category.html">所有分类</a></h3>
+        </div>
+
+    </div>
+    <ul class="site-menu">
+	  <li><a href="https://www.nanshig.com/" class="current">首页</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-256-0-0-0-0-0-0-0-0.html">潮款服装</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-1-0-0-0-0-0-0-0-0.html">时尚鞋靴</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-470-0-0-0-0-0-0-0-0.html">护肤美妆</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-201-0-0-0-0-0-0-0-0.html">精选套装</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-264-0-0-0-0-0-0-0-0.html">时尚T恤</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-1395-0-0-0-0-0-0-0-2.html">防晒衣</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-1072-0-0-0-0-0-0-0-0.html">POLO衫</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-1422-0-0-0-0-0-0-0-0.html">休闲鞋</a></li>
+      <li><a href="https://www.nanshig.com/shop/cate-165-0-0-0-0-0-0-0-0.html">百搭七分裤</a></li>
+    </ul>
+    <div class="woyue-menud"><a href="https://www.nanshig.com/AppDownload/index.html" target="_blank">下载APP</a><i class="trademark-hui-icon"></i></div>  
+    
+  </div>
+</nav>
+<div class="nch-breadcrumb-layout">
+    <div class="nch-breadcrumb wrapper"><i class="icon-home"></i>
+            <span><a href="https://www.nanshig.com/shop">首页</a></span><span class="arrow">&gt;</span>
+                <span><a href="https://www.nanshig.com/shop/cate-0-0-0-0-0-0-0-0-0.html"></a></span><span class="arrow">&gt;</span>
+                <span><a href="https://www.nanshig.com/shop/cate-0-0-0-0-0-0-0-0-0.html"></a></span><span class="arrow">&gt;</span>
+                <span><a href="https://www.nanshig.com/shop/cate-0-0-0-0-0-0-0-0-0.html"></a></span><span class="arrow">&gt;</span>
+                <span><a href="https://www.nanshig.com/shop/cate-0-0-0-0-0-0-0-0-0.html"></a></span><span class="arrow">&gt;</span>
+                <span></span>
+          </div>
+  </div>
+
+<link href="./css/layout.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+body {
+
+_behavior: url(https://www.nanshig.com/shop/templates/default/css/csshover.htc);
+
+}
+
+</style>
+
+<div class="nch-container wrapper">
+
+  
+
+  <div class="">
+
+    <div id="gc_goods_recommend_div" style="width:1200px;"></div>
+
+    
+    <div class="shop_con_list" id="main-nav-holder">
+
+      <nav class="sort-bar" id="main-nav">
+
+        <div class="pagination"><ul><li><span>上一页</span></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-2.html"><span>下一页</span></a></li></ul> </div>
+
+        <div class="nch-all-category">
+          <div class="all-category">
+            <div class="title"> <i></i>
+                <h3><a href="https://www.nanshig.com/shop/category.html">所有分类</a></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="nch-sortbar-array"> 排序方式：
+
+          <ul>
+
+            <li class="selected normal"><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-0.html" title="默认排序">默认</a></li>
+
+            <li class="orderBySoldNum"><a href="https://www.nanshig.com/shop/cate-151-0-0-1-2-0-0-0-0.html" title="点击按销量从高到低排序">销量<i></i></a></li>
+
+            <li class="orderByPopular"><a href="https://www.nanshig.com/shop/cate-151-0-0-2-2-0-0-0-0.html" title="点击按人气从高到低排序">人气<i></i></a></li>
+
+            <li class="orderByPrice"><a href="https://www.nanshig.com/shop/cate-151-0-0-3-2-0-0-0-0.html" title="点击按价格从高到低排序" id="price_orderBtn">价格<i></i></a></li>
+
+            <li><div><input id="priceMin" title="最低价" value="" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;);" class="input-txt"><em>-</em><input id="priceMax" title="最高价" value="" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;);" class="input-txt"><a id="priceBtn" class="priceBtn">确定</a></div></li>
+
+          </ul>
+        </div>
+
+        <div class="nch-sortbar-owner">
+            <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-1-0-0-0.html">
+            <i></i>平台自营</a></span>
+        </div>
+
+        <div class="nch-sortbar-owner">
+            <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-1-0-0.html"><i></i>赠品</a>
+            </span>
+        </div>
+
+        <div class="nch-sortbar-location">商品所在地：
+
+          <div class="select-layer">
+
+            <div class="holder"><em nc_type="area_name">不限地区<!-- 所在地 --></em></div>
+
+            <div class="selected"><a nc_type="area_name">不限地区<!-- 所在地 --></a></div>
+
+            <i class="direction"></i>
+
+            <ul class="options">
+
+              
+<div class="filter-detailc" id="addressDraw">
+  <dl class="location-hots">
+    <dt>常用地区</dt>
+    <dd><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-1-0.html">北京</a></dd>
+	<dd><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-2-0.html">天津</a></dd>
+    <dd><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-9-0.html">上海</a></dd>
+    <dd><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-35-0.html">海外</a></dd>
+  </dl>
+  <dl class="location-all">
+    <dt>省份</dt>
+    <dd>
+      <ul>
+        <li>
+          <p class="lt">A</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-12-0.html">安徽</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-34-0.html">澳门</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">C</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-22-0.html">重庆</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">F</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-13-0.html">福建</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">G</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-19-0.html">广东</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-28-0.html">甘肃</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-20-0.html">广西</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-24-0.html">贵州</a></span> </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="lt">H</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-21-0.html">海南</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-3-0.html">河北</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-16-0.html">河南</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-8-0.html">黑龙江</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-17-0.html">湖北</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-18-0.html">湖南</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">J</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-10-0.html">江苏</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-14-0.html">江西</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-7-0.html">吉林</a></span> </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="lt">N</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-6-0.html">辽宁</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-5-0.html">内蒙古</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-30-0.html">宁夏</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">Q</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-29-0.html">青海</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">S</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-15-0.html">山东</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-4-0.html">山西</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-27-0.html">陕西</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-23-0.html">四川</a></span> </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="lt">T</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-32-0.html">台湾</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">X</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-26-0.html">西藏</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-31-0.html">新疆</a></span> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-33-0.html">香港</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">Y</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-25-0.html">云南</a></span> </p>
+        </li>
+        <li>
+          <p class="lt">Z</p>
+          <p class="lc"> <span><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-11-0.html">浙江</a></span> </p>
+        </li>
+      </ul>
+    </dd>
+  </dl>
+  <p class="oreder-default"><a href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-0.html">不限地区</a></p>
+</div>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <!-- 商品列表循环  -->
+
+
+
+      <div>
+
+<style type="text/css">
+    #box {
+    	background: #FFF;
+    	width: 238px;
+    	height: 410px;
+    	margin: -390px 0 0 0;
+    	display: block;
+    	border: solid 4px #D93600;
+    	position: absolute;
+    	z-index: 999;
+    	opacity: .5
+    }
+    .shopMenu {
+    	position: fixed;
+    	z-index: 1;
+    	right: 25%;
+    	top: 0;
+    }
+</style>
+<div class="squares" nc_type="current_display_mode">
+    <input type="hidden" id="lockcompare" value="unlock">
+    <ul class="list_pic">
+       <!-- js生成 -->
+           <div class="clear"></div>
+    </ul>
+  </div>
+<form id="buynow_form" method="post" action="https://www.nanshig.com/shop/index.php" target="_blank">
+  <input id="act" name="act" type="hidden" value="buy">
+  <input id="op" name="op" type="hidden" value="buy_step1">
+  <input id="goods_id" name="cart_id[]" type="hidden">
+</form>
+
+      </div>
+
+      <div class="tc mt20 mb20">
+
+        <div class="pagination"> <ul><li><span>首页</span></li><li><span>上一页</span></li><li><span class="currentpage">1</span></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-2.html"><span>2</span></a></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-3.html"><span>3</span></a></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-4.html"><span>4</span></a></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-5.html"><span>5</span></a></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-6.html"><span>6</span></a></li><li><span>...</span></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-2.html"><span>下一页</span></a></li><li><a class="demo" href="https://www.nanshig.com/shop/cate-151-0-0-0-0-0-0-0-95.html"><span>末页</span></a></li></ul> </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- 猜你喜欢 -->
+
+    <div id="guesslike_div" style="width:980px;"></div>
+
+  </div>
+
+  <div class="clear"></div>
+
+</div>
+
+<!--footer-->
+<div class="nsgfoot-xt"></div>
+<div class="nsgfoot-bz">
+    <div class="w-1200">
+        <img src="./images/nsgfoot_bz.png" alt="" width="1200" height="90">
+    </div>
+</div>
+
+<div class="nsgfoot-bottom">
+    <div class="bottom-box cfix">
+        <div class="bottom-box-left">
+            
+            <div class="bottom-app-code"></div>
+            <p>男士购客服</p>
+            <p>添加微信号</p>
+        </div>
+        <div class="bottom-box-center">
+            <ul class="box-center">
+                <li>
+                    <h3>新手指南</h3>
+                    <a href="https://www.nanshig.com/shop/article-18.html" target="_blank">找回密码</a>
+                    <a href="https://www.nanshig.com/shop/article-6.html" target="_blank">注册账号</a>
+                    <a href="https://www.nanshig.com/shop/article-44.html" target="_blank">交易条款</a>
+                </li>
+                <li>
+                    <h3>支付配送</h3>
+                    <a href="https://www.nanshig.com/shop/article-17.html" target="_blank">网上支付</a>
+                    <a href="https://www.nanshig.com/shop/article-42.html" target="_blank">配送运费</a>
+                    <a href="https://www.nanshig.com/shop/article-43.html" target="_blank">配送方式</a>
+                </li>
+                <li>
+                    <h3>售后服务</h3>
+                    <a href="https://www.nanshig.com/shop/article-31.html" target="_blank">售后政策</a>
+                    <a href="https://www.nanshig.com/shop/article-32.html" target="_blank">售后流程</a>
+                    <a href="https://www.nanshig.com/shop/article-34.html" target="_blank">售后申请</a>
+                </li>
+                <li>
+                    <h3>关于我们</h3>
+                    <a href="https://www.nanshig.com/shop/article-22.html" target="_blank">公司介绍</a>
+                    <a href="https://www.nanshig.com/shop/article-23.html" target="_blank">隐私声明</a>
+                    <a href="https://www.nanshig.com/shop/article-24.html" target="_blank">招贤纳士</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-box-right cfix">
+            <div class="contact-us">
+                <h3>联系我们</h3>
+                <p>客服微信：gebuzaishuai</p>              
+                <p>工作日：9:00-20:00</p>
+                <div class="gb-okhqb-yj contact-advice">
+                    <span class="okhqb_feed" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/index.php?act=member_mallconsult&amp;op=add_mallconsult&#39;">意见反馈</span>
+                </div>
+            </div>
+            <div class="attention-us cfix">
+                <h3>关注我们</h3>
+                <div class="weiXin" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/article-23.html&#39;" title="男士购微信">
+                    <div class="weiXinCode"></div>
+                </div>
+                <div class="weiBo" onclick="window.open(&#39;https://weibo.com/p/1006065678617328&#39;);" title="男士购微博">
+                    <div class="weiBoCode"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nsgfoot-rz">
+    <p class="nsgfoot-link">
+    <a>友情链接：</a>
+    
+                </p>
+    
+    <p class="nsgfoot-copy">Copyright © 2010-2018 男士购 版权所有 <a target="_blank" rel="nofollow" href="http://www.miitbeian.gov.cn/">桂ICP备15008077号-1</a>&nbsp;&nbsp;<a rel="nofollow"></a><a href="http://www.cnzz.com/stat/website.php?web_id=1273089985" target="_blank" title="站长统计">站长统计</a></p>
+    
+</div>
+<!--/footer-->
+
+<link href="./css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="./css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+<link href="./css/chat.css" rel="stylesheet" type="text/css">
+<div style="clear: both;"></div>
+<div id="web_chat_dialog" style="display: none;float:right;">
+		</div>
+    <object width="1" height="1" style="position: absolute; left: -1px;" id="msg_audio" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param value="https://www.nanshig.com/chat/resource/audio.swf" name="movie"><param value="always" name="allowscriptaccess"><embed width="1" height="1" allowscriptaccess="always" src="https://www.nanshig.com/chat/resource/audio.swf" name="msg_audio">
+    </object>
+			<a id="chat_login" href="javascript:void(0)" style="display: none;"></a>
+</body>
+</html>

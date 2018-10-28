@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>男士购</title>
+<meta name="keywords" content="男士购">
+<meta name="description" content="男士购">
+
+
+<style type="text/css">
+body {
+_behavior: url(https://www.nanshig.com/shop/templates/default/css/csshover.htc);
+}
+.nc-appbar-tabs a.compare { display: none !important;}
+</style>
+<link href="./../css/base.css" rel="stylesheet" type="text/css">
+<link href="./../css/home_cart.css" rel="stylesheet" type="text/css">
+<link href="./../css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="./../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./../js/indexList.js"></script>
+<script type="text/javascript" src="./../js/base.js"></script>
+
+<style id="poshytip-css-tip-yellowsimple" type="text/css">div.tip-yellowsimple{visibility:hidden;position:absolute;top:0;left:0;}div.tip-yellowsimple table, div.tip-yellowsimple td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;}div.tip-yellowsimple td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:10px;width:10px;overflow:hidden;}div.tip-yellowsimple td.tip-right{background-position:100% 0;}div.tip-yellowsimple td.tip-bottom{background-position:100% 100%;}div.tip-yellowsimple td.tip-left{background-position:0 100%;}div.tip-yellowsimple div.tip-inner{background-position:-10px -10px;}div.tip-yellowsimple div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}</style></head>
+<body>
+ 
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div id="vToolbar" class="nc-appbar">
+  <div class="nc-appbar-tabs" id="appBarTabs">
+        <div class="user ta_delay" nctype="a-barUserInfo">
+      <div class="avatar"><img src="./../images/avatar_17816.jpg" height="100" width="100"></div>
+      <p>我</p>
+    </div>
+    <div class="user-info" nctype="barUserInfo" style="display:none;"><i class="arrow"></i>
+      <div class="avatar"><img src="./../images/avatar_17816.jpg">
+        <div class="frame"></div>
+      </div>
+      <dl>
+        <dt>Hi, 影青</dt>
+        <dd>当前等级：<strong nctype="barMemberGrade">V0</strong></dd>
+        <dd>当前经验值：<strong nctype="barMemberExp">0</strong></dd>
+      </dl>
+    </div>
+        <ul class="tools">
+    
+                        <li><a href="javascript:void(0);" id="compare" class="compare ta_delay"><div class="tools_img"></div><span>对比</span></a></li>
+            <li><a href="javascript:void(0);" id="gotop" class="gotop ta_delay"><div class="tools_img"></div><span>顶部</span></a></li>
+    </ul>
+    <div class="content-box" id="content-compare">
+      <div class="top">
+        <h3>商品对比</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="comparelist"></div>
+    </div>
+    <div class="content-box" id="content-cart">
+      <div class="top">
+        <h3>我的购物车</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="rtoolbar_cartlist"></div>
+    </div>
+    <a id="activator" href="javascript:void(0);" class="nc-appbar-hide"></a> </div>
+  <div class="nc-hidebar" id="ncHideBar">
+    <div class="nc-hidebar-bg">
+            <div class="user-avatar"><img src="./../images/avatar_17816.jpg"></div>
+            <div class="frame"></div>
+      <div class="show"></div>
+    </div>
+  </div>
+</div>
+<!--网站公告-->
+<style>
+.public-top-layout.w {
+    border-bottom: solid 2px #F5F5F5;
+    box-shadow: 1px 1px 10px 1px rgba(15,166,255,.1);
+}
+.nsg-top-notice {
+    font-size: 16px;
+    color: #ba9c6d;
+    background-color: #fffbea;
+    padding: 14px 24px;
+}
+.nsg-layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nsg-top-notice .nsg-ico-info {
+    width: 22px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 12px;
+    background-image: url(https://www.nanshig.com/images/nsg-ico-info.png);
+    background-repeat: no-repeat;
+}
+</style>
+<div class="nsg-top-notice">
+  <div class="nsg-layout">
+    <i class="nsg-ico-info"></i>男士购域名nanshig.com全新升级NRO.CN，两域名同时使用，感谢您一路陪伴，未来还要携手同行。APP<a style="color:#1cbcb4;margin-left:10px;" href="https://www.nanshig.com/app/nsg.apk">直接下载新版 &gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#1cbcb4;margin-left:10px;" href="http://sj.qq.com/myapp/detail.htm?apkName=top.yokey.nsg" target="_blank">应用市场下载 &gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#1cbcb4;margin-left:10px;" href="https://www.nanshig.com/shengji/index.html" target="_blank">升级更新教程</a>
+  </div>
+</div>
+
+<!--/网站公告-->
+<div class="public-top-layout w">
+  <div class="topbar wrapper">
+    <div class="user-entry">
+            您好 <span>
+      <a href="https://www.nanshig.com/shop/index.php?act=member&amp;op=home">影青</a>
+            <div class="nc-grade-mini" style="cursor:pointer;" onclick="javascript:go(&#39;https://www.nanshig.com/shop/grade.html&#39;);">V0</div>
+            </span>  <span>[<a href="https://www.nanshig.com/shop/index.php?act=login&amp;op=logout">退出</a>] </span>
+          </div>
+    <div class="quick-menu">
+
+
+	
+      <dl>
+        <dt><em class="ico_order"></em><a href="https://www.nanshig.com/shop/index.php?act=member_order">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_new">待付款订单</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_send">待确认收货</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_order&amp;state_type=state_noeval">待评价交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><em class="ico_store"></em><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fglist">我的收藏</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fglist">商品收藏</a></li>
+            <li><a href="https://www.nanshig.com/shop/index.php?act=member_favorites&amp;op=fslist">店铺收藏</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><em class="ico_service"></em><a href="https://www.nanshig.com/shop/article_cate-2.html">帮助中心</a></dt>
+      </dl>
+      	  
+    </div>
+  </div>
+</div>
+  <header class="ncc-head-layout">
+    <div class="site-logo"><a href="https://www.nanshig.com/shop"><img src="./../images/05923582196171529.png" class="pngFix"></a></div>
+        <ul class="ncc-flow">
+      <li class="current"><i class="step1"></i>
+        <p>我的购物车</p>
+        <sub></sub>
+        <div class="hr"></div>
+      </li>
+      <li class=""><i class="step2"></i>
+        <p>填写核对购物信息</p>
+        <sub></sub>
+        <div class="hr"></div>
+      </li>
+      <li class=""><i class="step3"></i>
+        <p>支付提交</p>
+        <sub></sub>
+        <div class="hr"></div>
+      </li>
+      <li class=""><i class="step4"></i>
+        <p>订单完成</p>
+        <sub></sub>
+        <div class="hr"></div>
+      </li>
+    </ul>
+      </header>
+<div class="ncc-wrapper">
+
+  <style>
+.ncc-table-style tbody tr.item_disabled td {
+	background: none repeat scroll 0 0 #F9F9F9;
+	height: 30px;
+	padding: 10px 0;
+	text-align: center;
+}
+</style>
+<div class="ncc-main">
+  <div class="ncc-title">
+    <h3>我的购物车</h3>
+    <h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
+  </div>
+  <form action="https://www.nanshig.com/shop/index.php?act=buy&amp;op=buy_step1" method="POST" id="form_buy" name="form_buy">
+    <input type="hidden" value="1" name="ifcart">
+    <table class="ncc-table-style" nc_type="table_cart">
+      <thead>
+        <tr>
+          <th class="w50"><label>
+              <input type="checkbox" checked="" value="1" id="selectAll">
+              全选</label></th>
+          <th></th>
+          <th>商品</th>
+          <th class="w120">单价(元)</th>
+          <th class="w120">数量</th>
+          <th class="w120">小计(元)</th>
+          <th class="w80">操作</th>
+        </tr>
+      </thead>
+            <tbody>
+        <tr>
+          <th colspan="20"><strong>店铺：<a href="https://www.nanshig.com/shop/shop-46.html">男士内裤</a></strong> <span member_id="17576"></span>
+                      </th>
+        </tr>
+
+        <!-- S one store list -->
+                <tr id="cart_item_29484" nc_group="29484" class="shop-list ">
+          <td><input type="checkbox" checked="" nc_type="eachGoodsCheckBox" value="29484|1" id="cart_id29484" name="cart_id[]"></td>
+                    <td class="w60"><a href="https://www.nanshig.com/shop/item-226499.html" target="_blank" class="ncc-goods-thumb"><img src="./../images/46_05933887351637363_60.jpg" alt="4条内裤男士内裤平角裤木纤维裤头男式中腰四角短裤秋冬裤衩 A组 L"></a></td>
+                    <td class="tl"><dl class="ncc-goods-info">
+              <dt><a href="https://www.nanshig.com/shop/item-226499.html" target="_blank">4条内裤男士内裤平角裤木纤维裤头男式中腰四角短裤秋冬裤衩 A组 L</a></dt>
+                                          
+              <!-- S gift list -->
+                            <!-- E gift list -->
+            </dl></td>
+          <td class="w120"><em id="item29484_price">89.00</em></td>
+                    <td class="w120 ws0"><a href="JavaScript:void(0);" onclick="decrease_quantity(29484);" title="减少商品件数" class="add-substract-key tip">-</a>
+            <input id="input_item_29484" value="1" orig="1" changed="1" onkeyup="change_quantity(29484, this);" type="text" class="text w20">
+            <a href="JavaScript:void(0);" onclick="add_quantity(29484);" title="增加商品件数" class="add-substract-key tip">+</a></td>
+                    <td class="w120">            <em id="item29484_subtotal" nc_type="eachGoodsTotal">89.00</em>
+            </td>
+          <td class="w80">            <a href="javascript:void(0)" onclick="collect_goods(&#39;226499&#39;);">收藏</a><br>
+                        <a href="javascript:void(0)" onclick="drop_cart_item(29484);">删除</a></td>
+        </tr>
+
+        <!-- S bundling goods list -->
+                <!-- E bundling goods list -->
+
+                <!-- E one store list -->
+
+        <!-- S mansong list -->
+                <!-- E mansong list -->
+
+        <tr>
+          <td class="tr" colspan="20"><div class="ncc-store-account">
+              <dl>
+                <dt>店铺合计：</dt>
+                <dd><em nc_type="eachStoreTotal">89.00</em>元</dd>
+              </dl>
+            </div></td>
+        </tr>
+              </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="20"><div class="ncc-all-account">商品总价（不含运费）<em id="cartTotal">89.00</em>元</div></td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+  <div class="ncc-bottom"><a id="next_submit" href="javascript:void(0)" class="ncc-btn ncc-btn-acidblue fr"><i class="icon-pencil"></i>下一步，填写核对购物信息</a></div>
+
+  <!-- 猜你喜欢 -->
+  <div id="guesslike_div"></div>
+</div>
+</div><!--footer-->
+<div class="nsgfoot-xt"></div>
+<div class="nsgfoot-bz">
+    <div class="w-1200">
+        <img src="./../images/nsgfoot_bz.png" alt="" width="1200" height="90">
+    </div>
+</div>
+
+<div class="nsgfoot-bottom">
+    <div class="bottom-box cfix">
+        <div class="bottom-box-left">
+            
+            <div class="bottom-app-code"></div>
+            <p>男士购客服</p>
+            <p>添加微信号</p>
+        </div>
+        <div class="bottom-box-center">
+            <ul class="box-center">
+                <li>
+                    <h3>新手指南</h3>
+                    <a href="https://www.nanshig.com/shop/article-18.html" target="_blank">找回密码</a>
+                    <a href="https://www.nanshig.com/shop/article-6.html" target="_blank">注册账号</a>
+                    <a href="https://www.nanshig.com/shop/article-44.html" target="_blank">交易条款</a>
+                </li>
+                <li>
+                    <h3>支付配送</h3>
+                    <a href="https://www.nanshig.com/shop/article-17.html" target="_blank">网上支付</a>
+                    <a href="https://www.nanshig.com/shop/article-42.html" target="_blank">配送运费</a>
+                    <a href="https://www.nanshig.com/shop/article-43.html" target="_blank">配送方式</a>
+                </li>
+                <li>
+                    <h3>售后服务</h3>
+                    <a href="https://www.nanshig.com/shop/article-31.html" target="_blank">售后政策</a>
+                    <a href="https://www.nanshig.com/shop/article-32.html" target="_blank">售后流程</a>
+                    <a href="https://www.nanshig.com/shop/article-34.html" target="_blank">售后申请</a>
+                </li>
+                <li>
+                    <h3>关于我们</h3>
+                    <a href="https://www.nanshig.com/shop/article-22.html" target="_blank">公司介绍</a>
+                    <a href="https://www.nanshig.com/shop/article-23.html" target="_blank">隐私声明</a>
+                    <a href="https://www.nanshig.com/shop/article-24.html" target="_blank">招贤纳士</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-box-right cfix">
+            <div class="contact-us">
+                <h3>联系我们</h3>
+                <p>客服微信：gebuzaishuai</p>              
+                <p>工作日：9:00-20:00</p>
+                <div class="gb-okhqb-yj contact-advice">
+                    <span class="okhqb_feed" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/index.php?act=member_mallconsult&amp;op=add_mallconsult&#39;">意见反馈</span>
+                </div>
+            </div>
+            <div class="attention-us cfix">
+                <h3>关注我们</h3>
+                <div class="weiXin" onclick="javascript:window.location.href=&#39;https://www.nanshig.com/shop/article-23.html&#39;" title="男士购微信">
+                    <div class="weiXinCode"></div>
+                </div>
+                <div class="weiBo" onclick="window.open(&#39;https://weibo.com/p/1006065678617328&#39;);" title="男士购微博">
+                    <div class="weiBoCode"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nsgfoot-rz">
+    <p class="nsgfoot-link">
+    <a>友情链接：</a>
+    
+                </p>
+    
+    <p class="nsgfoot-copy">Copyright © 2010-2018 男士购 版权所有 <a target="_blank" rel="nofollow" href="http://www.miitbeian.gov.cn/">桂ICP备15008077号-1</a>&nbsp;&nbsp;<a rel="nofollow">
+    </a><a href="http://www.cnzz.com/stat/website.php?web_id=1273089985" target="_blank" title="站长统计">站长统计</a></p>
+    
+</div>
+<!--/footer-->
+
+<link href="./../css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="./../css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+
+			<link href="./../css/chat.css" rel="stylesheet" type="text/css">
+			<div style="clear: both;"></div>
+			<div id="web_chat_dialog" style="display: none;float:right;"><div class="chat-box"><div class="chat-list"><div class="chat-list-top"><h1><i></i>联系人</h1><span class="minimize-chat-list" onclick="chat_show_list();"></span></div><div id="chat_user_list" class="chat-list-content ps-container"><div><dl id="chat_user_friends"><dt onclick="chat_show_user_list(&#39;friends&#39;);"><span class="show"></span>我的好友</dt><dd id="chat_friends" style="display: none;"></dd></dl><dl id="chat_user_recent"><dt onclick="chat_show_user_list(&#39;recent&#39;);"><span class="show"></span>最近联系人</dt><dd id="chat_recent" style="display: none;"></dd></dl></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 100px; display: none;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 420px; display: none;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div></div></div>
+					</div><object width="1" height="1" style="position: absolute; left: -1px;" id="msg_audio" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param value="https://www.nanshig.com/chat/resource/audio.swf" name="movie"><param value="always" name="allowscriptaccess"><embed width="1" height="1" allowscriptaccess="always" src="https://www.nanshig.com/chat/resource/audio.swf" name="msg_audio"></object>
+			<a id="chat_login" href="javascript:void(0)" style="display: none;"></a>
+			
+
+      <div class="tip-yellowsimple"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div><div class="tip-yellowsimple"><div class="tip-inner tip-bg-image"></div><div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div></div>
+
+
+</body></html>
